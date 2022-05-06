@@ -7,6 +7,7 @@ export const Footer = () => {
             <div className="f_u">
             <div className = "first">
                 <p className="head">ABOUT US</p>
+                <br></br>
                 <div className = "inner">
                 <div className="left">
                     <p>Contact Us</p>
@@ -23,7 +24,9 @@ export const Footer = () => {
             </div>
             <div className = "second">
                 <p className="head">SIGN UP AND SAVE</p>
+                <br></br>
                 <p>Subscribe to get exclusive offers on designer brands</p>
+                <br></br>
                 <input className="inp" type="text" placeholder="Enter your email"/>
                 <br></br>
                 <button  className="btn" type="submit">Subscribe</button>
