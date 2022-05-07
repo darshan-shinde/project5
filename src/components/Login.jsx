@@ -114,12 +114,15 @@ export const Login = () => {
     e.preventDefault()
     let a=false
     data.map((e)=>{
-      console.log(user.email)
-      if(e.username==user.email || e.password==user.password){
-        toggleAuth();
-		    nav(-2, { replace: true });  
-        a=true
-      }
+    
+        console.log(user.email);
+        if(e.username===user.email || e.password===user.password){
+          toggleAuth();
+          nav(-2, { replace: true });  
+          a=true
+        }
+    
+     
     })
     if(a){
       return 
