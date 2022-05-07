@@ -132,6 +132,7 @@
   border:1px solid grey;
   font-family: futura,sans-serif;
   border-radius:5px;
+ 
 }
 .login_submit{
   width:100%;
@@ -149,5 +150,7 @@
   text-align:center;
 }
 .label{
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  font-size:15px;
+  font-weight: bold;
 }

@@ -1,4 +1,5 @@
 import "../App.css"
+// import{Box, GridItem,MenuList,Text,MenuItem} from "@chakra-ui/react"
 import { FaFacebook,FaInstagram } from 'react-icons/fa';
 
 export const Footer = () => {
@@ -49,5 +50,18 @@ export const Footer = () => {
                 
             </div>
         </div>
+
+
+
+        // <Box width='100%' bg='gray' color='black'>
+        //     <GridItem  templateColumns="repeat(3, 1fr)" gap={8}>
+        //       <MenuList display="flex">
+        //         <MenuItem>
+        //             <h4>About us</h4>
+        //             <Text>Darshan</Text>
+        //         </MenuItem>
+        //       </MenuList>
+        //     </GridItem>
+        // </Box>
     )
 }

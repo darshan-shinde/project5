@@ -102,7 +102,7 @@ export const Login = () => {
     emp()
   },[])
   	async function emp() {
-		let res = await fetch('https://bluefly-api.herokuapp.com/users');
+		let res = await fetch('https://bluefly-api.herokuapp.com/user');
 		let data = await res.json();
 		setData(data);
 	}
@@ -114,7 +114,8 @@ export const Login = () => {
     e.preventDefault()
     let a=false
     data.map((e)=>{
-      if(e.username==user.username || e.password==user.password){
+      console.log(user.email)
+      if(e.username==user.email || e.password==user.password){
         toggleAuth();
 		    nav(-2, { replace: true });  
         a=true
@@ -160,7 +161,6 @@ export const Login = () => {
 				placeholder=""
 				className="login_username"
 				onChange={handelchange}
-                width="800%"
 			/>
             <br></br>
             <br></br>
